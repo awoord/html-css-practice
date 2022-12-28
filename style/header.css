@@ -1,0 +1,183 @@
+header{
+    border-bottom: 1px solid rgb(223, 221, 221);
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;    
+    z-index: 50;
+    background-color: white;
+    
+}
+
+.header__leftーsection {
+    display: flex;
+    margin-right: 60px;
+    margin-left: 20px;
+    flex-shrink: 0;
+    
+    
+}
+
+.header__middle-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    max-width: 500px;
+    
+
+}
+
+.header__right-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    margin-left: 30px;
+    margin-right: 20px;
+    width: 180px;
+    
+}
+
+
+
+
+.header__leftーsection--hamburger-menu{
+    width: 25px;
+    margin-right: 25px;   
+}
+
+.header__leftーsection--youtube-logo{
+    width: 95px;
+}
+
+
+
+.header__middle-section--search-bar{
+    height: 42px;
+    flex-grow: 1;
+    width: 0;
+    border: 1px solid rgb(211, 208, 208);
+}
+
+.header__middle-section--search-bar::placeholder {
+    padding-left: 10px;
+    font-size: 16px;
+    color: rgb(107, 95, 95);
+    font-family: arial;
+}
+
+
+.header__middle-section__search-box{
+    width: 30px;
+    background-color: rgb(233, 232, 232);
+    width: 65px;
+    height: 42px;
+    border: 1px solid rgb(194, 192, 192);
+    margin-left: -1px;
+      
+}
+
+.header__middle-section__search-box--icon{
+    width: 25px;
+
+}
+
+
+.header__middle-section__voice-search{
+    margin-left: 10px;
+    background-color: rgb(242, 242, 242);
+    padding: 8px 8px 8px 8px;
+    border-radius: 30px;
+    flex-shrink: 0;
+    
+}
+
+.header__middle-section__voice-search--icon{
+    width: 25px;
+    cursor: pointer;
+
+}
+
+.header__right-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__right-section__upload--icon,
+.header__right-section--youtube-apps--icon,
+.header__right-section--notifications--icon{
+    width: 24px;
+}
+
+
+
+.header__right-section--channel--icon{
+    width: 35px;
+    height: 35px;
+    
+}
+
+.header__right-section__notifications-box{
+    position: relative;
+}
+
+.header__right-section--notifications--number{
+    position: absolute;
+    top: 0;
+    background-color: rgb(200, 21, 21);
+    color: white;
+    border-radius: 30px;
+    font-size: 12px;
+    padding: 2px 5px 2px 5px;
+    right: -5px;
+    top:-3px;
+    
+
+}
+
+/* tooltip */
+
+.header__middle-section__search-box,
+.header__middle-section__voice-search,
+.header__right-section__upload{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    white-space: nowrap;
+
+}
+
+.header__middle-section__search-box--tooltip,
+.header__middle-section__voice-search--tooltip,
+.header__right-section__upload--tooltip{
+    bottom: -27px;
+    position: absolute;
+    border: none;
+    background-color: rgb(136, 132, 132);
+    color: white;
+    font-size: 13px;
+    padding: 4px 7px 4px 7px;
+    border-radius: 3px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+
+.header__middle-section__search-box:hover .header__middle-section__search-box--tooltip,
+.header__middle-section__voice-search:hover .header__middle-section__voice-search--tooltip,
+.header__right-section__upload:hover .header__right-section__upload--tooltip{
+    opacity: 1;
+
+}
